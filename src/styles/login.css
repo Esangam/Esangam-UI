@@ -1,0 +1,11 @@
+.login-page-root {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+@media (max-width: 600px) {
+  .login-page-root {
+    padding-top: 3rem;
+  }
+}
