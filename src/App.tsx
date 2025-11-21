@@ -7,6 +7,9 @@ import AdminDashboardPage from './pages/AdminDashboardPage'
 import MemberDashboardPage from './pages/MemberDashboardPage'
 import { useNotifications } from './hooks/useNotifications'
 
+// ✅ NEW: import the bootstrap page
+import BootstrapAdminPage from './pages/BootstrapAdminPage'
+
 import './styles/app.css'
 
 import AppBar from '@mui/material/AppBar'
@@ -190,7 +193,12 @@ const App: React.FC = () => {
           </AppLayout>
         }
       />
+
+      {/* ES_ADMIN bootstrap page – no layout, no auth required */}
+      <Route path="/bootstrap/admin" element={<BootstrapAdminPage />} />
+
       <Route path="/login" element={<LoginPage />} />
+
       <Route
         path="/esadmin"
         element={
