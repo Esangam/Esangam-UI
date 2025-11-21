@@ -6,8 +6,6 @@ import EsAdminPage from './pages/EsAdminPage'
 import AdminDashboardPage from './pages/AdminDashboardPage'
 import MemberDashboardPage from './pages/MemberDashboardPage'
 import { useNotifications } from './hooks/useNotifications'
-
-// ✅ NEW: import the bootstrap page
 import BootstrapAdminPage from './pages/BootstrapAdminPage'
 
 import './styles/app.css'
